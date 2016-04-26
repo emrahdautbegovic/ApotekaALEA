@@ -21,7 +21,7 @@ namespace PISprojekat.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("mydb", throwIfV1Schema: false)
         {
         }
 
@@ -34,5 +34,8 @@ namespace PISprojekat.Models
         public DbSet<Category> Category { get; set; }
         public DbSet<Department> Department { get; set; }
         public DbSet<Status> Status { get; set; }
+        public DbSet<Incident> Incident { get; set; }
+        public DbSet<IncidentCategory> IncidentCategory { get; set; }
+        public DbSet<IncidentAdministrator> IncidentAdministrator { get; set; }
     }
 }

@@ -12,16 +12,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.AssetType.Name)
+            @Html.DisplayNameFor(model => model.AssetType)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
+            @Html.DisplayNameFor(model => model.Category)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Department.Name)
+            @Html.DisplayNameFor(model => model.Department)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Status.Name)
+            @Html.DisplayNameFor(model => model.Status)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -49,6 +49,9 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parrent)
         </th>
         <th></th>
     </tr>
@@ -93,6 +96,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Owner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parrent)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

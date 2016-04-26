@@ -51,7 +51,7 @@ namespace PISprojekat.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Model,Vendor,SerialNumber,Price,PurchaseDate,NextMaintenanceDate,DepreciationValue,Owner,AssetTypeId,CategoryId,StatusId,DepartmentId")] Asset asset)
+        public ActionResult Create([Bind(Include = "ID,Name,Model,Vendor,SerialNumber,Price,PurchaseDate,NextMaintenanceDate,DepreciationValue,Owner,Parrent,AssetTypeId,CategoryId,StatusId,DepartmentId")] Asset asset)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace PISprojekat.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Model,Vendor,SerialNumber,Price,PurchaseDate,NextMaintenanceDate,DepreciationValue,Owner,AssetTypeId,CategoryId,StatusId,DepartmentId")] Asset asset)
+        public ActionResult Edit([Bind(Include = "ID,Name,Model,Vendor,SerialNumber,Price,PurchaseDate,NextMaintenanceDate,DepreciationValue,Owner,Parrent,AssetTypeId,CategoryId,StatusId,DepartmentId")] Asset asset)
         {
             if (ModelState.IsValid)
             {
