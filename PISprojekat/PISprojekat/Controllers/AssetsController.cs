@@ -55,6 +55,7 @@ namespace PISprojekat.Controllers
         {
             if (ModelState.IsValid)
             {
+                
                 db.Asset.Add(asset);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -95,7 +96,15 @@ namespace PISprojekat.Controllers
         {
             if (ModelState.IsValid)
             {
+               
                 db.Entry(asset).State = EntityState.Modified;
+                db.SaveChanges();
+                List<Asset> assets = (from c in db.Asset where c.Parrent == asset.Name select c).ToList();
+                foreach (Asset a in assets)
+                {
+                    a.StatusId = asset.StatusId;
+                    db.Entry(a).State = EntityState.Modified;
+                }
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

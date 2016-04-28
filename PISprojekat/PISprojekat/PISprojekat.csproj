@@ -201,25 +201,70 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IncidentAdministratorsController.cs" />
-    <Compile Include="Controllers\IncidentCategoriesController.cs" />
+    <Compile Include="Controllers\IncidentManagerController.cs" />
     <Compile Include="Controllers\IncidentsController.cs" />
+    <Compile Include="Controllers\IncidentStatusController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MessageAuthorsController.cs" />
+    <Compile Include="Controllers\Messages1Controller.cs" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\MessageStatusController.cs" />
+    <Compile Include="Controllers\PrioritiesController.cs" />
     <Compile Include="Controllers\StatusController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604261106045_m.cs" />
-    <Compile Include="Migrations\201604261106045_m.Designer.cs">
-      <DependentUpon>201604261106045_m.cs</DependentUpon>
+    <Compile Include="Migrations\201603292131488_mig.cs" />
+    <Compile Include="Migrations\201603292131488_mig.Designer.cs">
+      <DependentUpon>201603292131488_mig.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604261113189_mi.cs" />
-    <Compile Include="Migrations\201604261113189_mi.Designer.cs">
-      <DependentUpon>201604261113189_mi.cs</DependentUpon>
+    <Compile Include="Migrations\201604202041369_mgr.cs" />
+    <Compile Include="Migrations\201604202041369_mgr.Designer.cs">
+      <DependentUpon>201604202041369_mgr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604261116049_mi1.cs" />
-    <Compile Include="Migrations\201604261116049_mi1.Designer.cs">
-      <DependentUpon>201604261116049_mi1.cs</DependentUpon>
+    <Compile Include="Migrations\201604202104445_migr.cs" />
+    <Compile Include="Migrations\201604202104445_migr.Designer.cs">
+      <DependentUpon>201604202104445_migr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202128123_migrati.cs" />
+    <Compile Include="Migrations\201604202128123_migrati.Designer.cs">
+      <DependentUpon>201604202128123_migrati.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202151560_migrati1.cs" />
+    <Compile Include="Migrations\201604202151560_migrati1.Designer.cs">
+      <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262052328_migrati11.cs" />
+    <Compile Include="Migrations\201604262052328_migrati11.Designer.cs">
+      <DependentUpon>201604262052328_migrati11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262121576_migrati12.cs" />
+    <Compile Include="Migrations\201604262121576_migrati12.Designer.cs">
+      <DependentUpon>201604262121576_migrati12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262139433_migrati13.cs" />
+    <Compile Include="Migrations\201604262139433_migrati13.Designer.cs">
+      <DependentUpon>201604262139433_migrati13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262148046_migrati14.cs" />
+    <Compile Include="Migrations\201604262148046_migrati14.Designer.cs">
+      <DependentUpon>201604262148046_migrati14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262201343_migrati15.cs" />
+    <Compile Include="Migrations\201604262201343_migrati15.Designer.cs">
+      <DependentUpon>201604262201343_migrati15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271812244_migrati16.cs" />
+    <Compile Include="Migrations\201604271812244_migrati16.Designer.cs">
+      <DependentUpon>201604271812244_migrati16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271833124_migrati17.cs" />
+    <Compile Include="Migrations\201604271833124_migrati17.Designer.cs">
+      <DependentUpon>201604271833124_migrati17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271926100_migrati18.cs" />
+    <Compile Include="Migrations\201604271926100_migrati18.Designer.cs">
+      <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -229,9 +274,12 @@
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Incident.cs" />
-    <Compile Include="Models\IncidentAdministrator.cs" />
-    <Compile Include="Models\IncidentCategory.cs" />
+    <Compile Include="Models\IncidentStatus.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="Models\MessageAuthor.cs" />
+    <Compile Include="Models\MessageStatus.cs" />
+    <Compile Include="Models\Priority.cs" />
     <Compile Include="Models\Status.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -316,26 +364,51 @@
     <Content Include="Views\Status\Details.cshtml" />
     <Content Include="Views\Status\Edit.cshtml" />
     <Content Include="Views\Status\Index.cshtml" />
-    <Content Include="Views\Assets\Create.cshtml" />
-    <Content Include="Views\Assets\Delete.cshtml" />
-    <Content Include="Views\Assets\Details.cshtml" />
-    <Content Include="Views\Assets\Edit.cshtml" />
-    <Content Include="Views\Assets\Index.cshtml" />
     <Content Include="Views\Incidents\Create.cshtml" />
     <Content Include="Views\Incidents\Delete.cshtml" />
     <Content Include="Views\Incidents\Details.cshtml" />
     <Content Include="Views\Incidents\Edit.cshtml" />
     <Content Include="Views\Incidents\Index.cshtml" />
-    <Content Include="Views\IncidentCategories\Create.cshtml" />
-    <Content Include="Views\IncidentCategories\Delete.cshtml" />
-    <Content Include="Views\IncidentCategories\Details.cshtml" />
-    <Content Include="Views\IncidentCategories\Edit.cshtml" />
-    <Content Include="Views\IncidentCategories\Index.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Create.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Delete.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Details.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Edit.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Index.cshtml" />
+    <Content Include="Views\IncidentManager\Create.cshtml" />
+    <Content Include="Views\IncidentManager\Delete.cshtml" />
+    <Content Include="Views\IncidentManager\Details.cshtml" />
+    <Content Include="Views\IncidentManager\Edit.cshtml" />
+    <Content Include="Views\IncidentManager\Index.cshtml" />
+    <Content Include="Views\Priorities\Create.cshtml" />
+    <Content Include="Views\Priorities\Delete.cshtml" />
+    <Content Include="Views\Priorities\Details.cshtml" />
+    <Content Include="Views\Priorities\Edit.cshtml" />
+    <Content Include="Views\Priorities\Index.cshtml" />
+    <Content Include="Views\IncidentStatus\Create.cshtml" />
+    <Content Include="Views\IncidentStatus\Delete.cshtml" />
+    <Content Include="Views\IncidentStatus\Details.cshtml" />
+    <Content Include="Views\IncidentStatus\Edit.cshtml" />
+    <Content Include="Views\IncidentStatus\Index.cshtml" />
+    <Content Include="Views\Messages\Create.cshtml" />
+    <Content Include="Views\Messages\Delete.cshtml" />
+    <Content Include="Views\Messages\Details.cshtml" />
+    <Content Include="Views\Messages\Edit.cshtml" />
+    <Content Include="Views\Messages\Index.cshtml" />
+    <Content Include="Views\MessageAuthors\Create.cshtml" />
+    <Content Include="Views\MessageAuthors\Delete.cshtml" />
+    <Content Include="Views\MessageAuthors\Details.cshtml" />
+    <Content Include="Views\MessageAuthors\Edit.cshtml" />
+    <Content Include="Views\MessageAuthors\Index.cshtml" />
+    <Content Include="Views\MessageStatus\Create.cshtml" />
+    <Content Include="Views\MessageStatus\Delete.cshtml" />
+    <Content Include="Views\MessageStatus\Details.cshtml" />
+    <Content Include="Views\MessageStatus\Edit.cshtml" />
+    <Content Include="Views\MessageStatus\Index.cshtml" />
+    <Content Include="Views\Messages1\Create.cshtml" />
+    <Content Include="Views\Messages1\Delete.cshtml" />
+    <Content Include="Views\Messages1\Details.cshtml" />
+    <Content Include="Views\Messages1\Edit.cshtml" />
+    <Content Include="Views\Messages1\Index.cshtml" />
+    <Content Include="Views\Assets\Create.cshtml" />
+    <Content Include="Views\Assets\Delete.cshtml" />
+    <Content Include="Views\Assets\Details.cshtml" />
+    <Content Include="Views\Assets\Edit.cshtml" />
+    <Content Include="Views\Assets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -349,14 +422,41 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604261106045_m.resx">
-      <DependentUpon>201604261106045_m.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201603292131488_mig.resx">
+      <DependentUpon>201603292131488_mig.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604261113189_mi.resx">
-      <DependentUpon>201604261113189_mi.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604202041369_mgr.resx">
+      <DependentUpon>201604202041369_mgr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604261116049_mi1.resx">
-      <DependentUpon>201604261116049_mi1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604202104445_migr.resx">
+      <DependentUpon>201604202104445_migr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604202151560_migrati1.resx">
+      <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262052328_migrati11.resx">
+      <DependentUpon>201604262052328_migrati11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262121576_migrati12.resx">
+      <DependentUpon>201604262121576_migrati12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262139433_migrati13.resx">
+      <DependentUpon>201604262139433_migrati13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262148046_migrati14.resx">
+      <DependentUpon>201604262148046_migrati14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262201343_migrati15.resx">
+      <DependentUpon>201604262201343_migrati15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271812244_migrati16.resx">
+      <DependentUpon>201604271812244_migrati16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271833124_migrati17.resx">
+      <DependentUpon>201604271833124_migrati17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271926100_migrati18.resx">
+      <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

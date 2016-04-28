@@ -1,0 +1,51 @@
+﻿@model IEnumerable<PISprojekat.Models.Message>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageAuthor.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageStatus.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MessageText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td style="border: 2px solid red">
+            @Html.DisplayFor(modelItem => item.MessageAuthor.Author)
+        </td>
+        <td style="border: 2px solid red">
+            @Html.DisplayFor(modelItem => item.MessageStatus.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MessageText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.ActionLink("Read", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Reply", "Create") |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

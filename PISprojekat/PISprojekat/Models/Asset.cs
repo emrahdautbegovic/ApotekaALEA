@@ -40,22 +40,21 @@ namespace PISprojekat.Models
         [StringLength(20, ErrorMessage = "Owner name cannot be longer than 20 characters.")]
         public string Owner { get; set; }
         public string Parrent { get; set; }
-        [Display(Name = "Type")]
         public int? AssetTypeId { get; set; }
-        [Display(Name = "Type")]
         [ForeignKey("AssetTypeId")]
+        [Display(Name = "Type")]
         public AssetType AssetType { get; set; }
-        [Display(Name = "Category")]
+
         public int? CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [Display(Name = "Category")]
         public Category Category { get; set; }
-        [Display(Name = "Status")]
+
         public int? StatusId { get; set; }
         [ForeignKey("StatusId")]
         [Display(Name = "Status")]
         public Status Status { get; set; }
-        [Display(Name = "Department")]
+
         public int? DepartmentId { get; set; }
         [ForeignKey("DepartmentId")]
         [Display(Name = "Department")]

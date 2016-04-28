@@ -46,10 +46,15 @@ namespace PISprojekat.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,Description")] Incident incident)
+        public ActionResult Create([Bind(Include = "ID,Title,Describe")] Incident incident)
         {
             if (ModelState.IsValid)
             {
+                Priority p = db.Priority.Find(1);
+                IncidentStatus i = db.IncidentStatus.Find(1);
+                incident.IncidentStatus = i;
+                incident.Priority = p;
+                incident.CreateTime = DateTime.Now;
                 db.Incident.Add(incident);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -78,7 +83,7 @@ namespace PISprojekat.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Title,Description")] Incident incident)
+        public ActionResult Edit([Bind(Include = "ID,Title,Describe,CreateTime")] Incident incident)
         {
             if (ModelState.IsValid)
             {
