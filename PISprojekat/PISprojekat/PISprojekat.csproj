@@ -266,6 +266,22 @@
     <Compile Include="Migrations\201604271926100_migrati18.Designer.cs">
       <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605042131288_migrati19.cs" />
+    <Compile Include="Migrations\201605042131288_migrati19.Designer.cs">
+      <DependentUpon>201605042131288_migrati19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042146335_migrati110.cs" />
+    <Compile Include="Migrations\201605042146335_migrati110.Designer.cs">
+      <DependentUpon>201605042146335_migrati110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042200202_migrati111.cs" />
+    <Compile Include="Migrations\201605042200202_migrati111.Designer.cs">
+      <DependentUpon>201605042200202_migrati111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042220364_migrati112.cs" />
+    <Compile Include="Migrations\201605042220364_migrati112.Designer.cs">
+      <DependentUpon>201605042220364_migrati112.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Asset.cs" />
@@ -457,6 +473,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604271926100_migrati18.resx">
       <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042131288_migrati19.resx">
+      <DependentUpon>201605042131288_migrati19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042146335_migrati110.resx">
+      <DependentUpon>201605042146335_migrati110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042200202_migrati111.resx">
+      <DependentUpon>201605042200202_migrati111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042220364_migrati112.resx">
+      <DependentUpon>201605042220364_migrati112.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

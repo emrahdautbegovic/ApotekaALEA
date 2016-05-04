@@ -161,10 +161,8 @@ C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\bin\Microsoft.Ow
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.csprojResolveAssemblyReference.cache
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.mig.resources
-C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.csproj.GenerateResource.Cache
-C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.dll
-C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.pdb
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.mgr.resources
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migr.resources
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati1.resources
@@ -176,3 +174,10 @@ C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISpro
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati16.resources
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati17.resources
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati18.resources
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati19.resources
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati110.resources
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati111.resources
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.csproj.GenerateResource.Cache
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.dll
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.pdb
+C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.Migrations.migrati112.resources
