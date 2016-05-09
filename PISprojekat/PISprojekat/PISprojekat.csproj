@@ -200,8 +200,6 @@
     <Compile Include="Controllers\AssetTypesController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\DepartmentsController.cs" />
-    <Compile Include="Controllers\EmployeesController.cs" />
-    <Compile Include="Controllers\EmployeeTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IncidentManagerController.cs" />
     <Compile Include="Controllers\IncidentsController.cs" />
@@ -216,13 +214,73 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603292131488_mig.cs" />
+    <Compile Include="Migrations\201603292131488_mig.Designer.cs">
+      <DependentUpon>201603292131488_mig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202041369_mgr.cs" />
+    <Compile Include="Migrations\201604202041369_mgr.Designer.cs">
+      <DependentUpon>201604202041369_mgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202104445_migr.cs" />
+    <Compile Include="Migrations\201604202104445_migr.Designer.cs">
+      <DependentUpon>201604202104445_migr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604202128123_migrati.cs" />
+    <Compile Include="Migrations\201604202128123_migrati.Designer.cs">
+      <DependentUpon>201604202128123_migrati.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201604202151560_migrati1.cs" />
     <Compile Include="Migrations\201604202151560_migrati1.Designer.cs">
       <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201605042232318_migrati11.cs" />
-    <Compile Include="Migrations\201605042232318_migrati11.Designer.cs">
-      <DependentUpon>201605042232318_migrati11.cs</DependentUpon>
+    <Compile Include="Migrations\201604262052328_migrati11.cs" />
+    <Compile Include="Migrations\201604262052328_migrati11.Designer.cs">
+      <DependentUpon>201604262052328_migrati11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262121576_migrati12.cs" />
+    <Compile Include="Migrations\201604262121576_migrati12.Designer.cs">
+      <DependentUpon>201604262121576_migrati12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262139433_migrati13.cs" />
+    <Compile Include="Migrations\201604262139433_migrati13.Designer.cs">
+      <DependentUpon>201604262139433_migrati13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262148046_migrati14.cs" />
+    <Compile Include="Migrations\201604262148046_migrati14.Designer.cs">
+      <DependentUpon>201604262148046_migrati14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604262201343_migrati15.cs" />
+    <Compile Include="Migrations\201604262201343_migrati15.Designer.cs">
+      <DependentUpon>201604262201343_migrati15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271812244_migrati16.cs" />
+    <Compile Include="Migrations\201604271812244_migrati16.Designer.cs">
+      <DependentUpon>201604271812244_migrati16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271833124_migrati17.cs" />
+    <Compile Include="Migrations\201604271833124_migrati17.Designer.cs">
+      <DependentUpon>201604271833124_migrati17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604271926100_migrati18.cs" />
+    <Compile Include="Migrations\201604271926100_migrati18.Designer.cs">
+      <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042131288_migrati19.cs" />
+    <Compile Include="Migrations\201605042131288_migrati19.Designer.cs">
+      <DependentUpon>201605042131288_migrati19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042146335_migrati110.cs" />
+    <Compile Include="Migrations\201605042146335_migrati110.Designer.cs">
+      <DependentUpon>201605042146335_migrati110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042200202_migrati111.cs" />
+    <Compile Include="Migrations\201605042200202_migrati111.Designer.cs">
+      <DependentUpon>201605042200202_migrati111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605042220364_migrati112.cs" />
+    <Compile Include="Migrations\201605042220364_migrati112.Designer.cs">
+      <DependentUpon>201605042220364_migrati112.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -230,8 +288,6 @@
     <Compile Include="Models\AssetType.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Department.cs" />
-    <Compile Include="Models\Employee.cs" />
-    <Compile Include="Models\EmployeeType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Incident.cs" />
     <Compile Include="Models\IncidentStatus.cs" />
@@ -369,18 +425,6 @@
     <Content Include="Views\Assets\Details.cshtml" />
     <Content Include="Views\Assets\Edit.cshtml" />
     <Content Include="Views\Assets\Index.cshtml" />
-    <None Include="Views\EmployeeTypes\Create.cshtml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="Views\EmployeeTypes\Delete.cshtml" />
-    <Content Include="Views\EmployeeTypes\Details.cshtml" />
-    <Content Include="Views\EmployeeTypes\Edit.cshtml" />
-    <Content Include="Views\EmployeeTypes\Index.cshtml" />
-    <Content Include="Views\Employees\Create.cshtml" />
-    <Content Include="Views\Employees\Delete.cshtml" />
-    <Content Include="Views\Employees\Details.cshtml" />
-    <Content Include="Views\Employees\Edit.cshtml" />
-    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -394,11 +438,53 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201603292131488_mig.resx">
+      <DependentUpon>201603292131488_mig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604202041369_mgr.resx">
+      <DependentUpon>201604202041369_mgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604202104445_migr.resx">
+      <DependentUpon>201604202104445_migr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604202151560_migrati1.resx">
       <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201605042232318_migrati11.resx">
-      <DependentUpon>201605042232318_migrati11.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604262052328_migrati11.resx">
+      <DependentUpon>201604262052328_migrati11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262121576_migrati12.resx">
+      <DependentUpon>201604262121576_migrati12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262139433_migrati13.resx">
+      <DependentUpon>201604262139433_migrati13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262148046_migrati14.resx">
+      <DependentUpon>201604262148046_migrati14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262201343_migrati15.resx">
+      <DependentUpon>201604262201343_migrati15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271812244_migrati16.resx">
+      <DependentUpon>201604271812244_migrati16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271833124_migrati17.resx">
+      <DependentUpon>201604271833124_migrati17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604271926100_migrati18.resx">
+      <DependentUpon>201604271926100_migrati18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042131288_migrati19.resx">
+      <DependentUpon>201605042131288_migrati19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042146335_migrati110.resx">
+      <DependentUpon>201605042146335_migrati110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042200202_migrati111.resx">
+      <DependentUpon>201605042200202_migrati111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605042220364_migrati112.resx">
+      <DependentUpon>201605042220364_migrati112.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

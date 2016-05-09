@@ -40,7 +40,5 @@ namespace PISprojekat.Models
         public DbSet<MessageStatus> MessageStatus { get; set; }
         public DbSet<MessageAuthor> MessageAuthor { get; set; }
         public DbSet<Message> Message { get; set; }
-        public DbSet<EmployeeType> EmployeeType { get; set; }
-        public DbSet<Employee> Employee { get; set; }
     }
 }
