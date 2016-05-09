@@ -167,4 +167,3 @@ C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISpro
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.csproj.GenerateResource.Cache
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.dll
 C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\obj\Debug\PISprojekat.pdb
-C:\Users\emrah\Source\Repos\ApotekaALEA\PISprojekat\PISprojekat\bin\Views\EmployeeTypes\Create.cshtml

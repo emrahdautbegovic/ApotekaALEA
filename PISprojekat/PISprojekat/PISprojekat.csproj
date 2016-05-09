@@ -203,8 +203,6 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\EmployeeTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IncidentAdministratorsController.cs" />
-    <Compile Include="Controllers\IncidentCategoriesController.cs" />
     <Compile Include="Controllers\IncidentManagerController.cs" />
     <Compile Include="Controllers\IncidentsController.cs" />
     <Compile Include="Controllers\IncidentStatusController.cs" />
@@ -242,9 +240,7 @@
     <Compile Include="Models\MessageAuthor.cs" />
     <Compile Include="Models\MessageStatus.cs" />
     <Compile Include="Models\Priority.cs" />
-    <Compile Include="Models\RiskLevel.cs" />
     <Compile Include="Models\Status.cs" />
-    <Compile Include="Models\Threat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -274,7 +270,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\EmployeeTypes\Delete.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -377,6 +372,7 @@
     <None Include="Views\EmployeeTypes\Create.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Views\EmployeeTypes\Delete.cshtml" />
     <Content Include="Views\EmployeeTypes\Details.cshtml" />
     <Content Include="Views\EmployeeTypes\Edit.cshtml" />
     <Content Include="Views\EmployeeTypes\Index.cshtml" />
@@ -385,16 +381,6 @@
     <Content Include="Views\Employees\Details.cshtml" />
     <Content Include="Views\Employees\Edit.cshtml" />
     <Content Include="Views\Employees\Index.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Create.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Delete.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Details.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Edit.cshtml" />
-    <Content Include="Views\IncidentAdministrators\Index.cshtml" />
-    <Content Include="Views\IncidentCategories\Create.cshtml" />
-    <Content Include="Views\IncidentCategories\Delete.cshtml" />
-    <Content Include="Views\IncidentCategories\Details.cshtml" />
-    <Content Include="Views\IncidentCategories\Edit.cshtml" />
-    <Content Include="Views\IncidentCategories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
