@@ -40,5 +40,16 @@ namespace PISprojekat.Models
         public DbSet<MessageStatus> MessageStatus { get; set; }
         public DbSet<MessageAuthor> MessageAuthor { get; set; }
         public DbSet<Message> Message { get; set; }
+        public DbSet<EmployeeType> EmployeeType { get; set; }
+        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Risk> Risk { get; set; }
+        public DbSet<ProjectPlan> ProjectPlan { get; set; }
+        public DbSet<Threat> Threat { get; set; }
+        public DbSet<Vulnerability> Vulnerability { get; set; }
+
+
+
+
+
     }
 }

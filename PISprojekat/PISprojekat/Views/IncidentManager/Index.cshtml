@@ -3,8 +3,14 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="container">
 
-<h2>Incident Manager</h2>
+    <h2>Incident Manager</h2>
+    <div style="float:right">
+        @Html.ActionLink("Logout", "Index", "Home")
+    </div>
+</div>
+
 
 <p>
     @Html.ActionLink("Create New", "Create")

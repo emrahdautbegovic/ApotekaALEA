@@ -1,7 +1,11 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Welcome admin";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<h3>Choose want you want to do</h3>
 
-<p>Use this area to provide additional information.</p>
+<li>@Html.ActionLink("Asset Manager", "Index", "Assets")</li>
+<li>@Html.ActionLink("Report the Incident Manager", "Index", "Incidents")</li>
+<li>@Html.ActionLink("Solve the Incident Manager", "Index", "IncidentManager")</li>
+<li>@Html.ActionLink("User Manager", "Index", "Employees")</li>
+<li>@Html.ActionLink("User Types", "Index", "EmployeeTypes")</li>
