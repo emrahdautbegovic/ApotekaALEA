@@ -233,14 +233,6 @@
     <Compile Include="Migrations\201604202104445_migr.Designer.cs">
       <DependentUpon>201604202104445_migr.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604202128123_migrati.cs" />
-    <Compile Include="Migrations\201604202128123_migrati.Designer.cs">
-      <DependentUpon>201604202128123_migrati.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604202151560_migrati1.cs" />
-    <Compile Include="Migrations\201604202151560_migrati1.Designer.cs">
-      <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201604262052328_migrati11.cs" />
     <Compile Include="Migrations\201604262052328_migrati11.Designer.cs">
       <DependentUpon>201604262052328_migrati11.cs</DependentUpon>
@@ -331,7 +323,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -482,9 +476,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604202104445_migr.resx">
       <DependentUpon>201604202104445_migr.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604202151560_migrati1.resx">
-      <DependentUpon>201604202151560_migrati1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604262052328_migrati11.resx">
       <DependentUpon>201604262052328_migrati11.cs</DependentUpon>

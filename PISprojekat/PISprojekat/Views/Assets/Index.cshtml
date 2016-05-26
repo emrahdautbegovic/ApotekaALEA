@@ -16,46 +16,43 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.AssetType.Name)
+            AssetType
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
+            Category
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Department.Name)
+            Department
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Status.Name)
+            Status
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            ModelName
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Model)
+            Model
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Vendor)
+            Vendor
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.SerialNumber)
+            SerialNo
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Price)
+            Price
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PurchaseDate)
+            PurchaseDate
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NextMaintenanceDate)
+            NextMaintDate
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.DepreciationValue)
+            Owner
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Owner)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Parrent)
+            Parent
         </th>
         <th></th>
     </tr>
@@ -96,9 +93,6 @@
             @Html.DisplayFor(modelItem => item.NextMaintenanceDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DepreciationValue)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Owner)
         </td>
         <td>
@@ -117,4 +111,9 @@
     <li>@Html.ActionLink("Categories", "Index", "Categories")</li>
     <li>@Html.ActionLink("Departments", "Index", "Departments")</li>
     <li>@Html.ActionLink("Status", "Index", "Status")</li>
+</div>
+
+<div>
+    <br />
+    @Html.ActionLink("Back to main menu", "About", "Home")
 </div>

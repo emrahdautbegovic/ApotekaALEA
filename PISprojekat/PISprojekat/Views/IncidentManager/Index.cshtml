@@ -54,10 +54,15 @@
         </td>
         <td>
             @Html.ActionLink("Messages", "Index", "Messages1") |
-            @Html.ActionLink("Edit", "Edit") |
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID}) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
         </td>
     </tr>
 }
 
 </table>
+
+
+<div>
+    @Html.ActionLink("Back to main menu", "About", "Home")
+</div>
